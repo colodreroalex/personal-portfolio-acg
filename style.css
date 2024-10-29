@@ -8,9 +8,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: black;
-    /*background-color: #1b1a1f;*/
-    color: #fff;
+    background-color: #e0e0e0;
+    color: #333;
 }
 
 #header {
@@ -48,13 +47,15 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: #333;
     text-decoration:none ;
     font-size: 18px;
     position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover{
+    color: #ff004f;
     transform: scale(1.1);
 }
 
@@ -158,16 +159,10 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 
-/*.sub-title{
-    font-size: 30px;
-    font-weight: 600;
-    color: white;
-}*/
-
 .sub-title {
-    font-size: 30px;
-    font-weight: 600;
-    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    color: #444;
     text-align: center; /* Centrar el texto */
     position: relative; /* Posición relativa para el efecto de subrayado */
     transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para color y transformaciones */
@@ -271,6 +266,7 @@ nav ul li a:hover::after{
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .services-list div i{
@@ -376,11 +372,12 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
-    transition: background 0.5s;
+    transition: background 0.5s, transform 0.3s ease;
 }
 
 .btn:hover{
     background: #ff004f;
+    transform: scale(1.05);
 }
 
 
